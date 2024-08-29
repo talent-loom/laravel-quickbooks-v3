@@ -32,19 +32,19 @@
   },
   "autoload": {
     "psr-4": {
-      "TalentLoom\\QuickBooks\\": "src/"
+      "TalentLoom\\LaravelQuickbooksV3\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "TalentLoom\\QuickBooks\\": "tests/"
+      "TalentLoom\\LaravelQuickbooksV3\\": "tests/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "TalentLoom\\QuickBooks\\Providers\\ServiceProvider",
-        "TalentLoom\\QuickBooks\\Providers\\ClientServiceProvider"
+        "TalentLoom\\LaravelQuickbooksV3\\Providers\\ServiceProvider",
+        "TalentLoom\\LaravelQuickbooksV3\\Providers\\ClientServiceProvider"
       ]
     }
   },
