@@ -22,9 +22,9 @@ The package uses the [auto registration feature](https://laravel.com/docs/packag
 
 ## Configuration
 
-1. You will need a ```quickBooksToken``` relationship on your ```User``` model.  There is a trait named ```TalentLoom\QuickBooks\HasQuickBooksToken```, which you can include on your ```User``` model, which will setup the relationship. To do this implement the following:
+1. You will need a ```quickBooksToken``` relationship on your ```User``` model.  There is a trait named ```TalentLoom\LaravelQuickbooksV3\HasQuickBooksToken```, which you can include on your ```User``` model, which will setup the relationship. To do this implement the following:
 
-Add ```use TalentLoom\QuickBooks\HasQuickBooksToken;``` to your service container at the top of User.php
+Add ```use TalentLoom\LaravelQuickbooksV3\HasQuickBooksToken;``` to your service container at the top of User.php
 and also add the trait within the class. For example:
 
 ```php
@@ -79,8 +79,8 @@ Psy Shell v0.8.17 (PHP 7.1.14 — cli) by Justin Hileman
      id: 1,
      // Other keys removed for example
    }
->>> $quickbooks = app('TalentLoom\QuickBooks\Client') // or app('QuickBooks')
-=> TalentLoom\QuickBooks\Client {#1613}
+>>> $quickbooks = app('TalentLoom\LaravelQuickbooksV3\Client') // or app('QuickBooks')
+=> TalentLoom\LaravelQuickbooksV3\Client {#1613}
 >>> $quickbooks->getDataService()->getCompanyInfo();
 => QuickBooksOnline\API\Data\IPPCompanyInfo {#1673
      +CompanyName: "Sandbox Company_US_1",
@@ -94,7 +94,7 @@ You can call any of the resources as documented [in the SDK](https://intuit.gith
 
 ## Middleware
 
-If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```TalentLoom\QuickBooks\Laravel\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
+If you have routes that will be dependent on the user's account having a usable QuickBooks OAuth token, there is an included middleware ```TalentLoom\LaravelQuickbooksV3\Filter``` that gets registered as ```quickbooks``` that will ensure the account is linked and redirect them to the `connect` route if needed.
 
 Here is an example route definition:
 
