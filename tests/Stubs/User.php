@@ -1,12 +1,12 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Stubs;
+namespace TalentLoom\LaravelQuickbooksV3\Stubs;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Mockery;
-use TalentLoom\QuickBooks\HasQuickBooksToken;
+use TalentLoom\LaravelQuickbooksV3\HasQuickBooksToken;
 
 /**
  * Class User

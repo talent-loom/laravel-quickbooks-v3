@@ -1,10 +1,10 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Providers;
+namespace TalentLoom\LaravelQuickbooksV3\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use TalentLoom\QuickBooks\Http\Middleware\Filter;
+use TalentLoom\LaravelQuickbooksV3\Http\Middleware\Filter;
 
 /**
  * Class ServiceProvider
@@ -89,7 +89,7 @@ class ServiceProvider extends LaravelServiceProvider
             ->prefix($config['prefix'])
             ->as('quickbooks.')
             ->middleware($config['middleware']['default'])
-            ->namespace('TalentLoom\QuickBooks\Http\Controllers')
+            ->namespace('TalentLoom\LaravelQuickbooksV3\Http\Controllers')
             ->group(function (Router $router) use ($config) {
                 $router
                     ->get($config['paths']['connect'], 'Controller@connect')

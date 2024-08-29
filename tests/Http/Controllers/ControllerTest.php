@@ -1,6 +1,6 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Http\Controllers;
+namespace TalentLoom\LaravelQuickbooksV3\Http\Controllers;
 
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\View\Factory as ViewFactory;
@@ -12,8 +12,8 @@ use Illuminate\Session\Store;
 use Mockery;
 use Mockery\Mock;
 use QuickBooksOnline\API\DataService\DataService;
-use TalentLoom\QuickBooks\Client as QuickBooks;
-use TalentLoom\QuickBooks\TestCase;
+use TalentLoom\LaravelQuickbooksV3\Client as QuickBooks;
+use TalentLoom\LaravelQuickbooksV3\TestCase;
 
 /**
  * Class ControllerTest

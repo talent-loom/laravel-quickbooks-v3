@@ -1,13 +1,13 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Http\Middleware;
+namespace TalentLoom\LaravelQuickbooksV3\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\Session\Session;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
-use TalentLoom\QuickBooks\Client as QuickBooks;
+use TalentLoom\LaravelQuickbooksV3\Client as QuickBooks;
 
 /**
  * Class Filter

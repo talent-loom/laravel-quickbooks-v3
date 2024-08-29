@@ -1,6 +1,6 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Http\Controllers;
+namespace TalentLoom\LaravelQuickbooksV3\Http\Controllers;
 
 use Exception;
 use Illuminate\Contracts\Routing\UrlGenerator;
@@ -13,7 +13,7 @@ use Illuminate\Routing\Redirector;
 use Illuminate\View\View;
 use QuickBooksOnline\API\Exception\SdkException;
 use QuickBooksOnline\API\Exception\ServiceException;
-use TalentLoom\QuickBooks\Client as QuickBooks;
+use TalentLoom\LaravelQuickbooksV3\Client as QuickBooks;
 
 /**
  * Class Controller

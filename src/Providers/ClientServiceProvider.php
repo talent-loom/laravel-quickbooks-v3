@@ -1,10 +1,10 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Providers;
+namespace TalentLoom\LaravelQuickbooksV3\Providers;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use TalentLoom\QuickBooks\Client;
+use TalentLoom\LaravelQuickbooksV3\Client;
 
 /**
  * Class ClientServiceProvider

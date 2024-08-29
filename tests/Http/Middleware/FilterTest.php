@@ -1,6 +1,6 @@
 <?php
 
-namespace TalentLoom\QuickBooks\Http\Middleware;
+namespace TalentLoom\LaravelQuickbooksV3\Http\Middleware;
 
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Contracts\Session\Session;
@@ -8,8 +8,8 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 use Mockery;
 use Mockery\Mock;
-use TalentLoom\QuickBooks\Client as QuickBooks;
-use TalentLoom\QuickBooks\TestCase;
+use TalentLoom\LaravelQuickbooksV3\Client as QuickBooks;
+use TalentLoom\LaravelQuickbooksV3\TestCase;
 
 /**
  * Class FilterTest

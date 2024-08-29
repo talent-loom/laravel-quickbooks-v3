@@ -1,6 +1,6 @@
 <?php
 
-namespace TalentLoom\QuickBooks;
+namespace TalentLoom\LaravelQuickbooksV3;
 
 use ArrayAccess;
 use Countable;

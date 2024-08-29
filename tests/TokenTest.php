@@ -1,13 +1,13 @@
 <?php
 
-namespace TalentLoom\QuickBooks;
+namespace TalentLoom\LaravelQuickbooksV3;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Mockery;
 use QuickBooksOnline\API\Core\OAuth\OAuth2\OAuth2AccessToken;
-use TalentLoom\QuickBooks\Stubs\TokenStub;
-use TalentLoom\QuickBooks\Stubs\User;
+use TalentLoom\LaravelQuickbooksV3\Stubs\TokenStub;
+use TalentLoom\LaravelQuickbooksV3\Stubs\User;
 
 /**
  * Class TokenTest

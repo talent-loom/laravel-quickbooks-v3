@@ -1,8 +1,8 @@
 <?php
 
-namespace TalentLoom\QuickBooks;
+namespace TalentLoom\LaravelQuickbooksV3;
 
-use TalentLoom\QuickBooks\Stubs\User;
+use TalentLoom\LaravelQuickbooksV3\Stubs\User;
 
 /**
  * Class HasQuickBooksTokenTest
